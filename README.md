@@ -1,106 +1,127 @@
+# Dallas Mavericks Player Scoring Efficiency Analysis
+
 ## Overview
 
-This project analyzes the scoring efficiency of Dallas Mavericks players during the 2025–2026 NBA season.
+This project analyzes scoring efficiency for the 2025-2026 Dallas Mavericks roster using player-level performance data from Basketball Reference.
 
-The objective is to evaluate player performance beyond traditional scoring statistics by combining scoring volume and shooting efficiency into a custom metric called MSEI (Mavericks Scoring Efficiency Index).
+The goal of the project is to move beyond traditional box score statistics and evaluate how efficiently players generate offense. To support this analysis, a custom metric called Mavericks Scoring Efficiency Index (MSEI) was developed by combining shooting efficiency, scoring volume, and shot creation indicators.
 
-The project covers data preparation, metric development, dashboard design, and player segmentation using Power BI and Python.
+The project uses Python for data preparation and feature engineering and Power BI for dashboard development and visualization.
 
-The analysis includes:
+Key objectives:
 
-* Exploratory Data Analysis (EDA)
-* Data Cleaning and Feature Engineering
-* Custom MSEI Development
-* Interactive Power BI Dashboard
-* Player Comparison Analysis
-* Player Clustering Analysis
+* Analyze player scoring efficiency across the roster
+* Identify the most efficient offensive contributors
+* Compare players using advanced scoring metrics
+* Understand relationships between scoring volume and efficiency
+* Group players into scoring archetypes using cluster analysis
 
----
+The final dashboard consists of six analytical pages:
 
-## Dashboard Preview
-
-### Overview Dashboard
-
-![Overview Dashboard](dashboards/screenshot/overview.png)
-
-Provides a high-level summary of team scoring efficiency, player rankings, and key performance indicators.
-
-### Efficiency Analysis Dashboard
-
-![Efficiency Analysis Dashboard](dashboards/screenshot/efficiency_analysis.png)
-
-Examines scoring efficiency across players using TS%, PTS per FGA, and MSEI.
-
-### MSEI Ranking Dashboard
-
-![MSEI Ranking Dashboard](dashboards/screenshot/msei_ranking.png)
-
-Ranks players based on the custom MSEI metric and highlights top performers.
-
-### Scoring Drivers Dashboard
-
-![Scoring Drivers Dashboard](dashboards/screenshot/scoring_drivers.png)
-
-Explores relationships between scoring metrics and overall scoring efficiency.
-
-### Player Comparison Dashboard
-
-![Player Comparison Dashboard](dashboards/screenshot/player_comparison.png)
-
-Allows side-by-side comparison of selected players across multiple performance measures.
-
-### Player Clusters Dashboard
-
-![Player Clusters Dashboard](dashboards/screenshot/player_clusters.png)
-
-Groups players into scoring archetypes based on efficiency and scoring volume.
+1. Team Overview
+2. Efficiency Analysis
+3. MSEI Ranking
+4. Scoring Drivers
+5. Player Comparison
+6. Player Clusters
 
 ---
 
 ## Dataset
 
-The dataset contains Dallas Mavericks player statistics from the 2025–2026 NBA season.
+Source:
 
-Key variables include:
+https://www.basketball-reference.com/teams/DAL/2026.html
 
-* PTS
-* TS%
-* PTS per FGA
-* Projected PTS per 36 Minutes
+Data was collected from multiple Dallas Mavericks statistical tables available on Basketball Reference, including:
+
+* Per Game Statistics
+* Per 36 Minutes Statistics
+* Shooting Statistics
+* Advanced Statistics
+* Adjusted Shooting Statistics
+* Play-by-Play Statistics
+* Per 100 Possession Statistics
+
+After data collection, the datasets were cleaned and merged into a single analytical table for dashboard development.
+
+Final analytical dataset fields include:
+
+* Player
+* Age
+* Minutes Played
+* Points Per Game
+* True Shooting Percentage (TS%)
+* Turnover Percentage (TOV%)
+* Projected Points Per 36 Minutes
+* Points Per Field Goal Attempt
+* TS Impact
 * MSEI
-* Cluster Labels
-
-Raw statistics were collected and transformed into an analytical dataset for dashboard development.
-
----
-
-## Methodology
-
-### Data Preparation
-
-Player statistics were collected, cleaned, and standardized using Python.
-
-### Metric Development
-
-A custom metric called MSEI was developed to evaluate scoring efficiency using multiple scoring-related variables.
-
-### Dashboard Development
-
-Power BI was used to create a five-page dashboard for player performance analysis.
-
-### Clustering Analysis
-
-Players were grouped into scoring archetypes to identify different scoring profiles within the roster.
+* Cluster
+* Cluster Name
 
 ---
 
-## Tools
+## Dashboard Preview
+
+### Team Overview
+
+![Team Overview](dashboards/screenshot/overview.png)
+
+Provides a high-level summary of team scoring efficiency, player rankings, and key performance indicators.
+
+---
+
+### Efficiency Analysis
+
+![Efficiency Analysis](dashboards/screenshot/efficiency_analysis.png)
+
+Examines scoring efficiency across players using TS%, Points per FGA, and MSEI.
+
+---
+
+### MSEI Ranking
+
+![MSEI Ranking](dashboards/screenshot/msei_ranking.png)
+
+Ranks players based on the custom MSEI metric and highlights top performers.
+
+---
+
+### Scoring Drivers
+
+![Scoring Drivers](dashboards/screenshot/scoring_drivers.png)
+
+Explores relationships between scoring metrics and overall scoring efficiency.
+
+---
+
+### Player Comparison
+
+![Player Comparison](dashboards/screenshot/player_comparison.png)
+
+Allows side-by-side comparison of selected players across multiple performance measures.
+
+---
+
+### Player Clusters
+
+![Player Clusters](dashboards/screenshot/player_clusters.png)
+
+Groups players into scoring archetypes based on efficiency and scoring volume.
+
+---
+
+## Tools and Technologies
 
 * Python
 * Pandas
 * NumPy
+* Jupyter Notebook
 * Power BI
 * DAX
+* Git
+* GitHub
 
 ---
 
@@ -108,9 +129,18 @@ Players were grouped into scoring archetypes to identify different scoring profi
 
 ```text
 dataset/
-dashboards/
+├── raw/
+├── cleaned/
+
 notebooks/
+├── Dallas Mavericks Player Scoring Efficiency Analysis.ipynb
+
+dashboards/
+├── Dallas_Mavericks_dashboards.pbix
+├── screenshot/
+
 output/
+├── Dallas Mavericks Player Scoring Efficiency Analysis.html
 ```
 
 ---
@@ -122,6 +152,3 @@ Siripaiboon Janpetch
 Master of Science in Data Analytics
 
 The University of Texas at San Antonio
-
-```
-```
