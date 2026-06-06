@@ -141,7 +141,7 @@ Requirements:
 * Python
 * Pandas
 * NumPy
-* Jupyter Notebook
+* JupyterLab
 * Power BI
 * DAX
 * Git
