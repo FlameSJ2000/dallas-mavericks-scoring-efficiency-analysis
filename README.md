@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Tool](https://img.shields.io/badge/Tool-Power%20BI-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Season](https://img.shields.io/badge/NBA-2025--2026-orange)
+
 # Dallas Mavericks Player Scoring Efficiency Analysis
 
 ## Overview
