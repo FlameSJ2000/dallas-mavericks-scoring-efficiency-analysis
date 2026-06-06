@@ -72,14 +72,6 @@ Provides a high-level summary of team scoring efficiency, player rankings, and k
 
 ---
 
-### Efficiency Analysis
-
-![Efficiency Analysis](dashboards/screenshot/efficiency_analysis.png)
-
-Examines scoring efficiency across players using TS%, Points per FGA, and MSEI.
-
----
-
 ### MSEI Ranking
 
 ![MSEI Ranking](dashboards/screenshot/msei_ranking.png)
@@ -88,11 +80,11 @@ Ranks players based on the custom MSEI metric and highlights top performers.
 
 ---
 
-### Scoring Drivers
+### Efficiency Analysis
 
-![Scoring Drivers](dashboards/screenshot/scoring_drivers.png)
+![Efficiency Analysis](dashboards/screenshot/efficiency_analysis.png)
 
-Explores relationships between scoring metrics and overall scoring efficiency.
+Examines scoring efficiency across players using TS%, Points per FGA, and MSEI.
 
 ---
 
@@ -109,6 +101,14 @@ Allows side-by-side comparison of selected players across multiple performance m
 ![Player Clusters](dashboards/screenshot/player_clusters.png)
 
 Groups players into scoring archetypes based on efficiency and scoring volume.
+
+---
+
+### Scoring Drivers
+
+![Scoring Drivers](dashboards/screenshot/scoring_drivers.png)
+
+Explores relationships between scoring metrics and overall scoring efficiency.
 
 ---
 
