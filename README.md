@@ -19,11 +19,11 @@ Key objectives:
 The final dashboard consists of six analytical pages:
 
 1. Team Overview
-2. Efficiency Analysis
-3. MSEI Ranking
-4. Scoring Drivers
-5. Player Comparison
-6. Player Clusters
+2. MSEI Ranking
+3. Efficiency Analysis
+4. Player Comparison
+5. Player Clusters
+6. Scoring Drivers
 
 ---
 
@@ -109,6 +109,24 @@ Groups players into scoring archetypes based on efficiency and scoring volume.
 ![Scoring Drivers](dashboards/screenshot/scoring_drivers.png)
 
 Explores relationships between scoring metrics and overall scoring efficiency.
+
+---
+
+## Power BI Dashboard
+
+The interactive Power BI dashboard is included in this repository.
+
+File:
+
+* Dallas_Mavericks_dashboards.pbix
+
+Download:
+
+[Download PBIX File](dashboards/Dallas_Mavericks_dashboards.pbix)
+
+Requirements:
+
+* Microsoft Power BI Desktop
 
 ---
 
