@@ -2,3 +2,6 @@
 __pycache__/
 *.tmp
 *.log
+
+.virtual_documents/
+*.db
